@@ -19,6 +19,8 @@ actions:
           - "/keptn/files/k6_test.js"
           - "-o"
           - "output-prometheus-remote"
+          - "--tag"
+          - "k6-temp-tag"
         env:
           - name: k6-details
             valueFrom: secret
