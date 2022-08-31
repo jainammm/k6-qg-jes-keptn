@@ -20,7 +20,7 @@ actions:
           - "-o"
           - "output-prometheus-remote"
           - "--tag"
-          - "testid=k6-temp-tag"
+          - "job=$(KEPTN_SERVICE)-$(KEPTN_PROJECT)-$(KEPTN_STAGE)"
         env:
           - name: k6-details
             valueFrom: secret
