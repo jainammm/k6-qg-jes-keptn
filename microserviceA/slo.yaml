@@ -8,10 +8,10 @@ objectives:
   - sli: k6_http_req_duration_p95
     pass:
       - criteria:
-          - "<500"
+          - "<1000"
     warning:
       - criteria:
-          - "<200"
+          - "<500"
 total_score:
   pass: "90%"
   warning: "75%"
